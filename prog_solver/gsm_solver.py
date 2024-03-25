@@ -21,6 +21,11 @@ def handle_variable_overwriting(lines):
     num_line = len(lines)
     for i in range(num_line):
         l = lines[i]
+        aug_assign_pattern = re.compile(r'(\w+)\s*([\+\-\*/%&|^]|[<>/]{2})=\s*(.+)')
+        aug_assign_match = aug_assign_pattern.search(l)
+        if aug_assign_match:
+            variable, operator, value = aug_assign_match.groups()
+            l = f"{variable} = {variable} {operator} {value}"
         if '=' not in l:
             new_lines.append(l)
             continue
@@ -135,11 +140,17 @@ def gsm_satlm_exec(code, prompting_style, return_code=False):
 def test():
 
     x = """
-    evan_dollars = Variable()
-    markese_dollars = evan_dollars - 5
-    total_dollars = evan_dollars + markese_dollars
-    total_dollars = 37
-    result = markese_dollars
+    total_cost = 3490
+    mileva_contribution = Variable()
+    cveta_contribution = Variable()
+    marta_contribution = Variable()
+    mileva_contribution + cveta_contribution + marta_contribution = total_cost
+    mileva_contribution += 270
+    cveta_contribution += 140
+    total_contribution = mileva_contribution + cveta_contribution + marta_contribution
+    equal_contribution = total_contribution / 3
+    mileva_contribution = equal_contribution - 270
+    result = mileva_contribution
     return result
 """
     code, res = gsm_satlm_exec(x.strip(), "satlm", return_code=True)

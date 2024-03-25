@@ -2,6 +2,7 @@ import os
 import itertools
 import time
 import openai
+import json
 
 from tqdm import tqdm
 from utils import *
@@ -17,8 +18,8 @@ GPT_WAITTIME = 20
 API_ERROR_IDENTIFIER = "OPENAI Error"
 
 def register_query_args(parser):
-    parser.add_argument('--engine', default='code-davinci-002', choices=[
-        "text-davinci-002", "text-davinci-003", "code-davinci-001", "code-davinci-002"])
+    parser.add_argument('--engine', default='gpt-3.5-turbo-instruct', choices=[
+        "text-davinci-002", "text-davinci-003", "code-davinci-001", "code-davinci-002", "gpt-3.5-turbo-instruct"])
     parser.add_argument('--run_prediction', default=False, action='store_true')
     parser.add_argument('--do_dryrun', default=False, action='store_true')
     parser.add_argument('--force_override', default=False, action='store_true')
@@ -46,7 +47,7 @@ def config_args_and_api(args):
         args.batch_size = 1
     openai.api_requestor.TIMEOUT_SECS = 60
 
-    if args.engine in ["text-davinci-002", "text-davinci-003", "code-davinci-001", "code-davinci-002"]:
+    if args.engine in ["text-davinci-002", "text-davinci-003", "code-davinci-001", "code-davinci-002","gpt-3.5-turbo-instruct"]:
         openai.api_key = os.getenv("OPENAI_API_KEY")
     else:
         raise RuntimeError("Engine not supported")
@@ -58,7 +59,7 @@ def length_of_prompt(prompt, max_tokens):
     return len(_TOKENIZER.tokenize(prompt)) + max_tokens
 
 
-def gpt_safe_completion(engine, prompts, temperature, max_tokens, stop_token, logprobs=1, num_samples=1, echo=True):
+def gpt_safe_completion(engine, prompts, temperature, max_tokens, stop_token, logprobs=1, num_samples=1, echo=False):
     last_exc = None
     for i in range(GPT_MAX_ATTEMPTS):
         try:
@@ -96,20 +97,22 @@ def gpt_safe_completion(engine, prompts, temperature, max_tokens, stop_token, lo
 
 def batch_query_engine(args, prompts, max_tokens, stop_token):
     predictions = []
-    resps = gpt_safe_completion(engine=args.engine, prompts=prompts, temperature=args.temperature, max_tokens=max_tokens, stop_token=stop_token, logprobs=1, num_samples=args.num_samples, echo=True)
+    resps = gpt_safe_completion(engine=args.engine, prompts=prompts, temperature=args.temperature, max_tokens=max_tokens, stop_token=stop_token, logprobs=1, num_samples=args.num_samples, echo=False)
 
     resps = resps["choices"]
     # print("RESPS", resps, len(resps))
     # print("P", prompts, len(prompts))
     resps = [resps[(i * args.num_samples):(i * args.num_samples + args.num_samples)] for i in range(len(prompts))]
-    # print(resps, len(resps))
+    #print(resps, len(resps))
     for prompt, resp in zip(prompts, resps):
         for pred in resp:
             pred["prompt"] = prompt
-            if len(pred["text"]) > len(prompt):
-                pred["text"] = pred["text"][len(prompt):]
-            else:
-                pred["text"] = " NULL"
+            #print(f"{pred['prompt']=}")
+            #print(f"{pred['text']=}")
+            #if len(pred["text"]) > len(prompt):
+            #    pred["text"] = pred["text"][len(prompt):]
+            #else:
+            #    pred["text"] = " NULL"
             pred["completion_offset"] = len(prompt)
 
     return resps
@@ -198,6 +201,9 @@ def score_of_completion(response):
     completion_offset = len(response["prompt"])
     tokens = response["logprobs"]["tokens"]
     token_offset = response["logprobs"]["text_offset"]
+
+    if len(token_offset) == 0:
+        json.dump(response, sys.stdout, indent=2)
 
     if completion_offset in token_offset:
         completion_start_tok_idx = token_offset.index(completion_offset)
