@@ -1,0 +1,52 @@
+[
+    {
+        "id": "0",
+        "question": "Factory A had 376 more workers than factory B. Factory A then hired another 257 workers, and factory B hired another 489 workers. In which factory and by how many are there more workers after the new hiring?\u200b",
+        "label": "114"
+    },
+    {
+        "id": "1",
+        "question": "Leo imagined a number, subtracted it from 500, and then that number substracted from 1000 and thus got the number 555. What number did Leo imagine?",
+        "label": "55"
+    },
+    {
+        "id": "2",
+        "question": "Voja and Laza started walking from Valjevo to Koteshich at the same time. Voja arrived in Koteshich 2 hours 22 minutes and 33 seconds after the start, and Laza arrived 1 hour 50 minutes and 2000 seconds later. What is time difference in seconds between their arrivals?",
+        "label": "47"
+    },
+    {
+        "id": "3",
+        "question": "Dragana has half as many marbles as Bojan, and Stefan has half as many marbles as Dragana. How many marbles does Stefan have if they have 714 marbles in total?",
+        "label": "102"
+    },
+    {
+        "id": "4",
+        "question": "The robot Rolly moves only forward and backward making the same number of steps. One day it had to cover 358 steps forward, from the start to the finish. It started, but when it was 100 steps away from the finish, it had to go back to the start, and then it went forward to the finish again. How many total steps did Rolly make in this movement?",
+        "label": "874"
+    },
+    {
+        "id": "5",
+        "question": "Tavin's father had the same salary for the past 9 years, which was 87,831 dinars. Every month he saved exactly one-ninth of his salary. How much money did Tavin's father save over these nine years?",
+        "label": "1053972"
+    },
+    {
+        "id": "6",
+        "question": "From 5 kg of wheat, 4 kg of flour is obtained, and from 2 kg of flour, 3 kg of bread is made. How many kilograms of bread are obtained from 300 kg of wheat?",
+        "label": "360"
+    },
+    {
+        "id": "7",
+        "question": "The perimeter of a rectangle is 84 cm. Calculate the area of the rectangle if one of its edges is twice as long as the other.",
+        "label": "392"
+    },
+    {
+        "id": "8",
+        "question": "Mileva, Cveta, and Marta pooled their money together to buy peppers for ajvar and they spent 3490 dinars. If Mileva had given 270 dinars more, and Cveta 140 dinars more, each of them would have contributed the same amount of money. How much money did Mileva originaly contribute?",
+        "label": "1030"
+    },
+    {
+        "id": "9",
+        "question": "A collection of math problems has an even number of pages. For the page numbering of this collection, 364 digits were used. How many digits are needed to number the entire collection?",
+        "label": "729"
+    }
+]
