@@ -207,7 +207,7 @@ def score_of_completion(response):
 
     if completion_offset in token_offset:
         completion_start_tok_idx = token_offset.index(completion_offset)
-    elif completion_offset > token_offset[-1]:
+    elif len(token_offset) != 0 and completion_offset > token_offset[-1]:
         completion_start_tok_idx = len(token_offset)
     else:
         completion_start_tok_idx = next(filter(lambda x: token_offset[x] >= completion_offset, range(len(token_offset))))
