@@ -11,7 +11,7 @@
     },
     {
         "id": "2",
-        "question": "Voja and Laza started walking from Valjevo to Koteshich at the same time. Voja arrived in Koteshich 2 hours 22 minutes and 33 seconds after the start, and Laza arrived 1 hour 50 minutes and 2000 seconds later. What is time difference in seconds between their arrivals?",
+        "question": "Voja and Laza started walking from Valjevo to Koteshich at the same time. Voja arrived in Koteshich 2 hours 22 minutes and 33 seconds after the start, and Laza needed 1 hour 50 minutes and 2000 seconds. What is time difference in seconds between their arrivals?",
         "label": "47"
     },
     {
@@ -26,27 +26,177 @@
     },
     {
         "id": "5",
+        "question": "Seven identical bundles of carrots cost 749 dinars, and six identical bundles of onions cost 324 dinars. Determine the total price of three bundles of carrots and seven bundles of onions.",
+        "label": "699"
+    },
+    {
+        "id": "6",
+        "question": "Boris went to an amusement park, where the first ride costs 150 dinars, and each subsequent ride is 5 dinars cheaper than the previous one. What is the maximum number of rides Boris can go on if he has brought with him a total of 1000 dinars?",
+        "label": "7"
+    },
+    {
+        "id": "7",
+        "question": "Two apples, two pears, and a quince together cost 174 dinars. Two pears, an apple, and a quince together cost 126 dinars. Two apples, a pear, and a quince together cost 146 dinars. How much does a quince cost?",
+        "label": "22"
+    },
+    {
+        "id": "8",
+        "question": "In Perina Street, all houses on the left side are marked with all the odd numbers from 1 to 31, and all houses on the right side with all the even numbers from 2 to 28. How many houses are there in Perina Street?",
+        "label": "30"
+    },
+    {
+        "id": "9",
+        "question": "Winnie the Bear gains 5 kg every summer, and loses 4 kg every winter. His weight does not change during spring and autumn. In the autumn of 2021, his weight was 100 kg. What was Winnie the Bear's weight in the spring of 2018?",
+        "label": "92"
+    },
+    {
+        "id": "10",
+        "question": "In Vera's room, 167 books were arranged on three shelves. Vera added 23 new books to the third shelf. Then she moved 26 books from the third shelf to the first shelf, and donated all the books from the second shelf to a shelter for abandoned children. After that, there were a total of 135 books left on all three shelves. How many books did Vera donate to the shelter for abandoned children?",
+        "label": "55"
+    },
+    {
+        "id": "11",
+        "question": "While Aca eats two cherries, Bora eats five, and while Bora eats three cherries, Voja eats seven cherries. Aca and Voja together ate 82 cherries. How many cherries did Bora eat during this time?",
+        "label": "30"
+    },
+    {
+        "id": "12",
+        "question": "Bojana thought of a number, added 5 to it, divided the obtained sum by 3, multiplied the result by 4, subtracted 6 from the obtained number, then divided the obtained difference by 7 and in that way got a result of 2. What number did Bojana think of?",
+        "label": "10"
+    },
+    {
+        "id": "13",
+        "question": "Milica thought of a number that is 222 larger than the number thought of by Danica. The number thought of by Danica is 219 less than the number that is 300 larger than 527. What numbers did Milica think of?",
+        "label": "830"
+    },
+    {
+        "id": "14",
+        "question": "Three buses started on a trip with a total of 150 students. At the first rest stop, 7 students moved from the first bus to the second, and 12 moved from the first bus to the third. After that, each bus had the same number of students. How many students were on the first buses at the beginning of the journey?",
+        "label": "69"
+    },
+    {
+        "id": "15",
+        "question": "Monkey George eats several bananas for breakfast, twice as many for lunch as for breakfast, and twice as many for dinner as for lunch. Monkey Jim eats twice as many bananas for breakfast as for dinner, and three times as many for lunch as for dinner. The two of them ate 42 bananas each one day. How many bananas did George eat for lunch?",
+        "label": "12"
+    },
+    {
+        "id": "16",
+        "question": "The number of legs of Pera's dogs is 24 greater than the number of their heads. How many dogs does Pera have?",
+        "label": "8"
+    },
+    {
+        "id": "17",
+        "question": "Pera has 5 geese that lay one egg each day, 5 geese that lay one egg every other day, and another 5 that lay one egg every fourth day. How many eggs do these 15 geese lay in 20 days?",
+        "label": "175"
+    },
+    {
+        "id": "18",
         "question": "Tavin's father had the same salary for the past 9 years, which was 87,831 dinars. Every month he saved exactly one-ninth of his salary. How much money did Tavin's father save over these nine years?",
         "label": "1053972"
     },
     {
-        "id": "6",
+        "id": "19",
         "question": "From 5 kg of wheat, 4 kg of flour is obtained, and from 2 kg of flour, 3 kg of bread is made. How many kilograms of bread are obtained from 300 kg of wheat?",
         "label": "360"
     },
     {
-        "id": "7",
+        "id": "20",
         "question": "The perimeter of a rectangle is 84 cm. Calculate the area of the rectangle if one of its edges is twice as long as the other.",
         "label": "392"
     },
     {
-        "id": "8",
+        "id": "21",
         "question": "Mileva, Cveta, and Marta pooled their money together to buy peppers for ajvar and they spent 3490 dinars. If Mileva had given 270 dinars more, and Cveta 140 dinars more, each of them would have contributed the same amount of money. How much money did Mileva originaly contribute?",
         "label": "1030"
     },
     {
-        "id": "9",
+        "id": "22",
         "question": "A collection of math problems has an even number of pages. For the page numbering of this collection, 364 digits were used. How many digits are needed to number the entire collection?",
         "label": "729"
+    },
+    {
+        "id": "23",
+        "question": "The price of one kilogram of apples is 247 dinars. Lenka bought 2 kg of apples and 4 kg of grapes. If she spent a total of 2114 dinars, how much does one kilogram of grapes cost?",
+        "label": "405"
+    },
+    {
+        "id": "24",
+        "question": "Marko started solving problems from a math collection on Tuesday and finished on Friday (the same week). He solved the problems in such a way that each day he solved two more problems than the previous day. In total, he solved 128 problems. How many problems did he solve on Thursday?",
+        "label": "33"
+    },
+    {
+        "id": "25",
+        "question": "Calculate the value of the expression if the minuend is the product of the numbers 1637 and 5, and the subtrahend is the quotient of the numbers 1566 and 9.",
+        "label": "8011"
+    },
+    {
+        "id": "26",
+        "question": "The sum of three numbers is 2022. If you decrease the first number by 111, the second number by 170, and the third number by 346, you get the same numbers. Determine the product of these numbers.",
+        "label": "296631360"
+    },
+    {
+        "id": "27",
+        "question": "Once, 198 toy cars were produced daily in the toy workshop. Now, the amount of toy cars produced in 6 days is the same as what used to be produced in 8 days. How many toy cars can now be produced in 100 working days?",
+        "label": "26400"
+    },
+    {
+        "id": "28",
+        "question": "A number is considered 'increasing' if each of its digits (except the first one), from left to right, is one greater than the previous one. Determine the 'increasing' number whose third is a natural number greater than 1500 and less than 2300.",
+        "label": "6789"
+    },
+    {
+        "id": "29",
+        "question": "A ticket printing device for the cinema always prints 4 digits for the ticket number. If the ticket number is one-digit, two-digit, or three-digit, a certain number of zeros are added in front of the ticket number. For example, a ticket with the number 5 is printed as 0005, and a ticket with the number 84 as 0084. How many zeros does the printer print for tickets from serial number 1 to serial number 212?",
+        "label": "361"
+    },
+    {
+        "id": "30",
+        "question": "Sisters Ena and Mila are now 12 and 15 years old. In eight years, their mother will be as old as Ena and Mila's combined ages. How old is their mother now?",
+        "label": "45"
+    },
+    {
+        "id": "31",
+        "question": "Each of the five children received an equal number of apples from grandma. When the children each ate four apples, they had left as many apples altogether as each child received at the beginning. How many apples did they receive in total?",
+        "label": "25"
+    },
+    {
+        "id": "32",
+        "question": "Ana, Bojana, Vera, and Gordana are playing tennis. Before each match, they are divided into pairs and play two against two. There are no tied results. After 8 matches, it was noted that Ana was in the winning pair 6 times, Bojana 3 times, and Vera 5 times. How many times was Gordana in the winning pair?",
+        "label": "2"
+    },
+    {
+        "id": "33",
+        "question": "The product of two numbers is 2016. If one of them is increased by 7, the product will be 2457. What is the sum of these numbers?",
+        "label": "95"
+    },
+    {
+        "id": "34",
+        "question": "Three friends, Boba, Jova, and Moma, collect football player cards. Boba has three times more cards than Jova, and Jova has twice as many cards as Moma. How many cards does Moma have if Boba and Moma together have 210 cards?",
+        "label": "30"
+    },
+    {
+        "id": "35",
+        "question": "Maja started counting steps from the house. First, she took 10 steps forward, then 3 steps back, 10 steps forward, then 2 steps back, 10 steps forward, then 1 step back. She repeats this process until she reaches the grocery store. How many steps does Maja have to take to move away from the house by 2038 steps?",
+        "label": "3056"
+    },
+    {
+        "id": "36",
+        "question": "Marko pulls balls from a bag that have the numbers 0, 5, 8 and 10 written on them. He pulls an equal number of balls with the numbers 8 and 10. He pulls several balls with the number 5. The number of balls with the number 0 is equal to one quarter of the total number of balls pulled. How many balls did Marko pull from the bag if the sum of the numbers on the balls he pulled out is 99?",
+        "label": "20"
+    },
+    {
+        "id": "37",
+        "question": "In football, the winner of a match receives 3 points, and the loser receives 0 points. If the match ends in a draw, then both teams receive 1 point each. One team played 68 matches and won 170 points. What is the maximum number of matches that the team could have lost?",
+        "label": "10"
+    },
+    {
+        "id": "38",
+        "question": "The sum of one third, one quarter, and one sixth of a number is 48 less than the sum of one twelfth, five twelfths, and seven twelfths of the same number. What is the number?",
+        "label": "144"
+    },
+    {
+        "id": "39",
+        "question": "Ana eats one and a half chocolates in 1 hour, and Ana and Bora together eat one third of a chocolate in 10 minutes. How many minutes does it take for Bora alone to eat one chocolate if all chocolates are equal and they eat them at a consistent rate?",
+        "label": "120"
     }
 ]
